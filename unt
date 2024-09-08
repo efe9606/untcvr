@@ -1,0 +1,42 @@
+def untcvr():
+  sayı = input("""
+        1)km to miles
+        2)miles to km
+        3)m to ft
+        4)ft to m
+        5)C to F
+        6)F to C
+        Lütfen yapmak istediğiniz işlemi seçiniz: """)
+  if sayı == "1":
+    km = int(input("Kaç km: "))
+    miles = km * 0.621371192
+    print(miles)
+  elif sayı == "2":
+    miles = int(input("Kaç mil: "))
+    km = miles * 1.609344
+    print(km)
+  elif sayı == "3":
+    m = int(input("Kaç m: "))
+    ft = m * 3.28084
+    print(ft)
+  elif sayı == "4":
+    ft = int(input("Kaç ft: "))
+    m = ft * 0.3048
+    print(m)
+  elif sayı == "5":
+    C = int(input("Kaç C: "))
+    F = C * 1.8 + 32
+    print(F)
+  elif sayı == "6":
+    F = int(input("Kaç F: "))
+    C = (F - 32) / 1.8
+    print(C)
+  else:
+    print("Lütfen geçerli bir işlem giriniz.")
+  
+  return untcvr()
+
+          
+
+        
+print (untcvr())
